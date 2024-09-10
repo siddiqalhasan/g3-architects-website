@@ -78,26 +78,51 @@ header{
 
 .feature-section{
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    max-width: 1200px;
-    margin: auto;
-    min-height: fit-content;
-    padding-bottom: 50px;
-}
-.feature-left{
-    max-width: 50%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 20px;
+    grid-template-rows: repeat(1,1fr);
+    padding:50px 0px;
+    
+}
+.feature-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 66%;
+    min-height: 100%;
+    gap: 15px;
+    margin-left: 150px;
+   
 }
 .feature-right{
-    max-width: 50%;
+    margin-top: 100px;
+    max-width: 70%;
+    margin-left: 20px;
+    
+}
+.feature-right h5{
+    margin:0px 0px 0px 0px ;
+    font-size: 35px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 50px;
+}
+.feature-right span{
+    color: black;
+    font-weight: 700; 
+}
+.feature-right h2{
+    margin: 0;
+    line-height: 50px;
+    font-size: 30px;
+    color: #ff900e;
+}
+.feature-right p{
+    
+    margin: 0;
 }
 .feature-btn{
-    margin-left: 0;
+    margin: 0px;
+    padding-top: 35px;
 }
 .feature-btn a{
 
@@ -124,4 +149,18 @@ header{
     .bannar-img img{
         max-width: 100%;
     }
+    .feature-section{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        padding:50px 0px; 
+    }
+    .feature-left{
+        margin: auto;
+        max-width: 100%;
+    }
+    .feature-right{
+        margin: auto;
+        max-width: 70%;
+    }
+
 }
