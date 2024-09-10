@@ -3,18 +3,16 @@
 *{
   font-family: "Work Sans", sans-serif;
 }
-*{
+header{
     background-color: #fff4e7;
 }
-
 .container{
-    max-width: 1480px;
+    max-width: 1200px;
     margin: auto;
-    background-color: aquamarine;
 }
 .nav-section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav-logo h3{
     font-size: 25px;
@@ -42,7 +40,7 @@
 
 /* main section starts here */
 .banner-tittle{
-    margin-top: 50px;
+   padding-top: 50px;
 }
 .banner-tittle h1{
     max-width: 400px;
@@ -56,12 +54,12 @@
     text-align: center;
     margin-top: 20px;
 }
-.banner-btn{
+.exp-btn{
     margin: auto;
     max-width: fit-content;
     margin-top: 50px;
 }
-.banner-btn a{
+.exp-btn a{
     text-decoration: none;
     padding: 15px 15px;
     background-color: #ff900e;
@@ -73,5 +71,57 @@
     max-width: 900px;
     margin: auto;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
+/* feature-section starts here */
+
+.feature-section{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: fit-content;
+    padding-bottom: 50px;
+}
+.feature-left{
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.feature-right{
+    max-width: 50%;
+}
+.feature-btn{
+    margin-left: 0;
+}
+.feature-btn a{
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .nav-section{
+        flex-direction: column;
+    }    
+    .nav-logo{
+        margin: auto;
+    }
+    .nav-menu{
+        margin: auto;
+    }
+    .bannar-img img{
+        max-width: 100%;
+    }
+}
