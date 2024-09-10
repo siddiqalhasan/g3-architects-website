@@ -48,13 +48,25 @@
     max-width: 400px;
     margin: auto;
     text-align: center;
-    font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
 }
 .banner-tittle p{
     max-width: 600px;
     margin: auto;
     text-align: center;
     margin-top: 20px;
+}
+.banner-btn{
+    margin: auto;
+    max-width: fit-content;
+    margin-top: 50px;
+}
+.banner-btn a{
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #ff900e;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
 }
 
