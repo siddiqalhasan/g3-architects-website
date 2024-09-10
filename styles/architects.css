@@ -68,7 +68,7 @@ header{
     font-weight: 500;
 }
 .bannar-img{
-    max-width: 900px;
+    max-width:100%;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 20px;
@@ -78,9 +78,7 @@ header{
 
 .feature-section{
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
+    display: flex;
     padding:50px 0px;
     
 }
@@ -90,13 +88,13 @@ header{
     max-width: 66%;
     min-height: 100%;
     gap: 15px;
-    margin-left: 150px;
+    margin-left: 250px;
    
 }
 .feature-right{
     margin-top: 100px;
-    max-width: 70%;
-    margin-left: 20px;
+    max-width: 38%;
+    margin-left: 50px;
     
 }
 .feature-right h5{
@@ -127,7 +125,54 @@ header{
 .feature-btn a{
 
 }
+/* feature-exprience */
 
+.feature-exprience{
+    display: flex;
+}
+.feature-exprience-left{
+    max-width: 50%;
+}
+.exprience-tittle{
+    max-width: 90%;
+}
+.exprience-tittle h3{
+    font-size: 45px;
+    max-width: 80%;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.exprience-tittle p{
+    color: #727272;
+    margin-top: 20px;
+    text-align: justify;
+}
+.exprience-list{
+    max-width: 90%;
+    box-sizing: border-box;
+    box-shadow: #dfdfdf52 0px 0px 20px .3px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.exprience-list h5{
+    font-size: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+.exprience-list p{
+    color: #727272;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+
+
+.feature-exprience-right{
+    max-width: 50%;
+}
+  
 
 
 
@@ -150,8 +195,7 @@ header{
         max-width: 100%;
     }
     .feature-section{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
+        flex-direction: column;
         padding:50px 0px; 
     }
     .feature-left{
@@ -162,5 +206,27 @@ header{
         margin: auto;
         max-width: 70%;
     }
+    .feature-exprience{
+        flex-direction: column-reverse;
+        justify-content: center;
+       
+    }
 
+    .feature-exprience-right{
+        max-width: 100%;
+    }
+    .feature-exprience-right img{
+        width: 100%;
+    }
+    .feature-exprience-left{
+        max-width: 100%;
+    }
+    .exprience-tittle {
+        max-width: 90%;
+        margin: auto;
+    }
+    .exprience-list {
+        max-width: 90%;
+        margin: auto;
+}
 }
